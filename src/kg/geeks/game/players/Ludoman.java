@@ -16,13 +16,13 @@ public class Ludoman extends Hero {
             int damage = (dice1 * dice2);
             int newHealth = boss.getHealth() - damage;
             boss.setHealth(newHealth);
-            System.out.println("Ludoman бросил кости " + this.getName() + " Шеф атакует " + damage);
+            System.out.println("Ludoman бросил кости " + this.getName() + " Шеф забрал ед.здоровье: " + damage);
         } else {
             Hero hero = heroes[RPG_Game.random.nextInt(heroes.length)];
             int damage = (dice1 + dice2);
             int newHealth = hero.getHealth() - damage;
             hero.setHealth(newHealth);
-            System.out.println("Ludoman бросил кости " + this.getName() + " атакует " + hero.getName() + " " + damage);
+            System.out.println("Ludoman бросил кости " + this.getName() + " забрал ед.здоровье: " + hero.getName() + " " + damage);
         }
 
 
